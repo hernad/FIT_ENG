@@ -12,8 +12,22 @@
 \usepackage{graphicx}
 \usepackage{etoolbox}
 \usepackage{datetime}
+\usepackage{needspace}
+\usepackage{titlesec}
+%\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
 
 \begin{document}
+\widowpenalty=300
+\clubpenalty=300
+
+% this alters "before" spacing (the second length argument) to 0
+%\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+% this changes "before" spacing back to its default of 50pt
+%\titlespacing*{\chapter}{0pt}{50pt}{40pt}}
+
+%\titlespacing*{\chapter}{0pt}{-50pt}{18pt}
+%\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
 
 \title{Open source software in Bosnia and Herzegovina}
 
@@ -188,15 +202,14 @@ Perhaps most important for market-dominating firms, piracy acts as a \textbf{bar
 These factors should figure in any full accounting of the \textbf{costs} and \textbf{benefits} of software piracy for top-tier vendors. Top-tier vendors have established and maintained their dominant positions in emerging markets through piracy, often prior to or in the absence of significant local investment. Any losses they incur at the margins of the consumer and business markets in those countries should be weighed against the value of maintaining their dominant positions. For near-monopolies, we would argue that this value is very high. For vendors working in highly competitive markets or selling products that do not function as standards or platforms, that value is clearly lower.\citep{mediapiracy}
 
 \chapter{OSS in Bosnia and Herzegovina}
-
+\vspace*{-0.7cm}
 Regarding Information technology (IT) in general, BiH is underdeveloped, emerging market. It has high rate of software piracy and low rate of local software production. BiH is a great example of positive effects of software piracy for top-tier vendors. The visibility of OSS solutions and products by IT users is insignificant.
-
 \section{Government moves}
 Recent government’s moves in this field have served to the near-monopoly of position of top-tier vendors. 
 
 "Law about fiscal systems"\footnote{\url{http://www.pufbih.ba/sr/zakon-o-fiskalnim-sistemima/pravilnici}} didn't enforce IT vendors to make technology neutral solutions. As the result we have got "Windows-only" fiscal systems on the market. Soon after the implementation of the fiscal law, the Government has begun an action on combating the software piracy. But, that action looked more like action of top-tier vendor's (Microsoft, Autodesk, etc) \textbf{private police} than Government move on enforcement of Intellectual property (IP) laws. There was no public campaign, only tax payers’ brutal money extortion. Open source software is not mentioned at all as a viable alternative to the illegal software.
-
 \section{Monocultural IT education in BiH}
+%\needspace{7\baselineskip}
 OSS presence in IT education and education in general is inadequate. There is no care about vendor neutrality in IT education. OSS is not mentioned as viable alternative to the software of market leaders. The lack of adequate presentation through the education leads to low interest and lack of knowledge about OSS among young people. If this trend continues, the new generation of Bosnian IT developers and end-users is going to be IT monoculture - addicted to top-tier vendors. It can be called as \textbf{IT neo-colonialism}.
 
 \chapter{OSS adoption in region - Slovenia} 
